@@ -81,12 +81,18 @@
         position: absolute;
         top: 0;
         right: 0;
+        margin-right: 80px;
+        margin-top: 20px;
 
         @include mobile{
             height: 50%;
             width: 100%;
             top: unset;
             bottom: 0;
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: -10px;
+            // padding-top: 20px;
         }
 
         img{
