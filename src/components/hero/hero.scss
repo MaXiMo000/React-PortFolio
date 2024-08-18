@@ -12,13 +12,13 @@
         margin: auto;
 
         .textContainer{
-            padding-top: 100px;
+            padding-top: 60px;
             width: 50%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 40px;
+            gap: 35px;
             z-index: 1;
 
             @include mobile{
@@ -34,10 +34,11 @@
                 font-size: 30px;
                 color: rebeccapurple;
                 letter-spacing: 10px;
+                margin-left: 5px;
 
-                // @include mobile{
-                //     font-size: 28px;
-                // }
+                @include mobile{
+                    margin-left: 2px;
+                }
             }
 
             h1{
@@ -82,7 +83,6 @@
         top: 0;
         right: 0;
         margin-right: 80px;
-        margin-top: 20px;
 
         @include mobile{
             height: 50%;
@@ -90,7 +90,6 @@
             top: unset;
             bottom: 0;
             margin-right: 0px;
-            margin-top: 0px;
             margin-bottom: -10px;
             // padding-top: 20px;
         }

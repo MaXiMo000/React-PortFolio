@@ -29,7 +29,7 @@ const Services = () => {
     initial="initial" ref={ref}
     animate={isInView && "animate"}>
         <motion.div className="textContainer" variants={variants}>
-            <p>I Focus on making<br />beautiful Websites</p>
+            <p>I Focus on making<br/>beautiful Websites</p>
             <hr />
         </motion.div>
         <motion.div className="titleContainer" variants={variants}>
@@ -43,7 +43,7 @@ const Services = () => {
             </div>
         </motion.div>
         <motion.div className="listContainer" variants={variants}>
-            <motion.div className="box" whileHover={{backgroundColor:  "lightgray", color: "black"}} variants={variants}>
+            <motion.div className="box" whileHover={{backgroundColor:"lightgray", color: "black"}} variants={variants}>
                 <h2>WordPress</h2>
                 <p>
                 WordPress is a powerful, user-friendly platform for building and managing websites, from blogs to 
