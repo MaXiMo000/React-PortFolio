@@ -9,9 +9,11 @@
     height: 100vh;
     padding-top: 20px;
     margin-bottom: 50px;
-    
+
     @include mobile{
         transform: none !important;
+        justify-content: center;
+        gap: 30px;
     }
 
     .textContainer{
