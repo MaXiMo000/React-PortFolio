@@ -26,7 +26,7 @@ const items = [
     },
     {
         id: 4,
-        title: "Educational Website",
+        title: "EduMain Website",
         img:"/edu.jpg",
         link: "https://maximo000.github.io/Educational-Website/main.html",
         description: "The educational website is designed using HTML, CSS, and JavaScript, offering an interactive platform for learning. It features a responsive design with well-structured content that is easily accessible on all devices. The site includes dynamic elements like quizzes, animations, and interactive lessons to enhance the learning experience. Clear navigation and visually appealing layouts ensure a user-friendly interface for students and educators alike.",
