@@ -3,6 +3,10 @@ import "./contact.scss"
 import { useInView, motion } from "framer-motion"
 import emailjs from "@emailjs/browser";
 
+const VITE_CONTACT_SERVICE = import.meta.env.VITE_CONTACT_SERVICE;
+const VITE_CONTACT_TEMPLATE = import.meta.env.VITE_CONTACT_TEMPLATE;
+const VITE_CONTACT_KEY = import.meta.env.VITE_CONTACT_KEY;
+
 const variants = {
     initial: {
         y: 500,
@@ -30,8 +34,8 @@ const Contact = () => {
         e.preventDefault();
     
         emailjs
-            .sendForm('service_48sv7s6', 'template_0lcm4x9', formRef.current, {
-                publicKey: 'mA6QlbTR7JSDUOVQP',
+            .sendForm(`${VITE_CONTACT_SERVICE}`, `${VITE_CONTACT_TEMPLATE}`, formRef.current, {
+            publicKey: `${VITE_CONTACT_KEY}`,
             })
             .then(
                 () => {
@@ -83,7 +87,7 @@ const Contact = () => {
             <motion.form ref={formRef}  onSubmit={sendEmail}
             initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1, delay: 1.5}}>
                 <input type="text" placeholder="Name" required name="name" />
-                <input type="emailt" placeholder="Email" required name="email" />
+                <input type="email" placeholder="Email" required name="email" />
                 <textarea placeholder="Message" rows="8" name="message"></textarea>
                 <button>Submit</button>
                 {error && "Error"}

@@ -5,10 +5,10 @@ import { motion,useScroll,useSpring, useTransform } from "framer-motion";
 const items = [
     {
         id: 1,
-        title: "Blog Website",
-        img:"/blog.jpg",
-        description: "The blog website is crafted using HTML, CSS, and JavaScript to provide a seamless user experience. It features a responsive design, ensuring accessibility across devices, and includes dynamic elements for enhanced interactivity. The site showcases well-structured content, with visually appealing layouts and smooth navigation. Custom animations and effects add a modern touch to the overall design.",
-        link: "https://maximo000.github.io/Front-End-Blog-Website/",
+        title: "Quiz App",
+        img: "/quiz-app.png",
+        link: "https://quiz-app-cp2h.onrender.com",
+        description: "Quiz App is a web-based platform designed to test users' knowledge across various topics. Built using HTML, CSS, and JavaScript, it offers an interactive and responsive interface, allowing users to engage in multiple-choice quizzes and receive immediate feedback on their performance."
     },
     {
         id: 2,
@@ -26,11 +26,18 @@ const items = [
     },
     {
         id: 4,
-        title: "EduMain Website",
-        img:"/edu.jpg",
-        link: "https://maximo000.github.io/Educational-Website/main.html",
-        description: "The educational website is designed using HTML, CSS, and JavaScript, offering an interactive platform for learning. It features a responsive design with well-structured content that is easily accessible on all devices. The site includes dynamic elements like quizzes, animations, and interactive lessons to enhance the learning experience. Clear navigation and visually appealing layouts ensure a user-friendly interface for students and educators alike.",
+        title: "House of Books",
+        img: "/books.png",
+        link: "https://houseofbooksfrontend.onrender.com",
+        description: "House of Books is an e-commerce platform for book enthusiasts, offering a wide range of book categories. Built using HTML, CSS, and JavaScript, the site features a responsive design, user-friendly navigation, and interactive elements to enhance the shopping experience. Users can browse, search, and purchase books seamlessly across various devices."
     },
+    {
+        id: 5,
+        title: "Blog Website",
+        img:"/blog.jpg",
+        description: "The blog website is crafted using HTML, CSS, and JavaScript to provide a seamless user experience. It features a responsive design, ensuring accessibility across devices, and includes dynamic elements for enhanced interactivity. The site showcases well-structured content, with visually appealing layouts and smooth navigation. Custom animations and effects add a modern touch to the overall design.",
+        link: "https://maximo000.github.io/Front-End-Blog-Website/",
+    }
 ]
 
 const Single = ({item}) => {
